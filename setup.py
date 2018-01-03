@@ -7,7 +7,7 @@ setup(
     version='0.1.0',
     description='pytest-play template for a command provider plugin',
     author='Davide Moro',
-    license='BSD',
+    license='Apache Software License 2.0',
     author_email='davide.moro@gmail.com',
     url='https://github.com/tierratelematics/cookiecutter-play-plugin',
     keywords=['cookiecutter', 'template', 'package', ],
