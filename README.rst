@@ -2,10 +2,6 @@
 Cookiecutter PyPackage
 ======================
 
-.. image:: https://pyup.io/repos/github/tierratelematics/cookiecutter-play-plugin/shield.svg
-     :target: https://pyup.io/repos/github/tierratelematics/cookiecutter-play-plugin/
-     :alt: Updates
-
 .. image:: https://img.shields.io/travis/tierratelematics/cookiecutter-play-plugin.svg
     :target: https://travis-ci.org/tierratelematics/cookiecutter-play-plugin
     :alt: Linux build status on Travis CI
@@ -37,7 +33,6 @@ This package is a fork of cookiecutter-pypackage_. It adds what you need to regi
 a new pytest-play_ command provider and removes not needed features provided in the
 original package.
 
-.. _Travis-CI: http://travis-ci.org/
 .. _pytest-play: https://github.com/tierratelematics/pytest-play
 .. _Cookiecutter: https://github.com/audrey/cookiecutter
 .. _cookiecutter-pypackage: https://github.com/audrey/cookiecutter-pypackage
