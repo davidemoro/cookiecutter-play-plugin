@@ -4,8 +4,8 @@ class NewProvider(object):
     def __init__(self, engine):
         self.engine = engine
 
-    def command_print(self, command):
+    def command_print(self, command, **kwargs):
         print(command['message'])
 
-    def command_yetAnotherCommand(self, command):
+    def command_yetAnotherCommand(self, command, **kwargs):
         pass
