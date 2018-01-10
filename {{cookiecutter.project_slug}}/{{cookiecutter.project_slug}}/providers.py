@@ -1,8 +1,8 @@
-class NewProvider(object):
-    """ Print provider """
+from pytest_play.providers import BaseProvider
 
-    def __init__(self, engine):
-        self.engine = engine
+
+class NewProvider(BaseProvider):
+    """ Print provider """
 
     def command_print(self, command, **kwargs):
         print(command['message'])
