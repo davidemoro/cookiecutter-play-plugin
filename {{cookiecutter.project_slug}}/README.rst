@@ -22,14 +22,14 @@
 
 {{ cookiecutter.project_short_description }}
 
-{% if is_open_source %}
-* Free software: {{ cookiecutter.open_source_license }}
-* Documentation: https://{{ cookiecutter.project_slug | replace("_", "-") }}.readthedocs.io.
-{% endif %}
+More info and examples on:
+
+* pytest-play_, documentation
+* cookiecutter-qa_, see ``pytest-play`` in action with a working example if you want to start hacking
+
 
 Features
 --------
-
 
 This project defines a new pytest-play_ command:
 
@@ -39,13 +39,15 @@ This project defines a new pytest-play_ command:
 
 You can add more commands adding new methods to the command provider implementation in ``providers.py`` module.
 
-More info and examples on:
+Twitter
+=======
 
-* pytest-play_, documentation
-* cookiecutter-qa_, see ``pytest-play`` in action with a working example if you want to start hacking
+``pytest-play`` tweets happens here:
+
+* `@davidemoro`_
 
 Credits
----------
+=======
 
 This package was created with Cookiecutter_ and the cookiecutter-play-plugin_ (based on `audreyr/cookiecutter-pypackage`_ project template).
 
@@ -54,4 +56,4 @@ This package was created with Cookiecutter_ and the cookiecutter-play-plugin_ (b
 .. _`cookiecutter-play-plugin`: https://github.com/tierratelematics/cookiecutter-play-plugin
 .. _pytest-play: https://github.com/tierratelematics/pytest-play
 .. _cookiecutter-qa: https://github.com/tierratelematics/cookiecutter-qa
-
+.. _`@davidemoro`: https://twitter.com/davidemoro

@@ -22,6 +22,7 @@ setup_requirements = [
 
 test_requirements = [
     'pytest',
+    'pytest-cov',
     # TODO: put package test requirements here
 ]
 
