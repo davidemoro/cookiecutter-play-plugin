@@ -1,18 +1,9 @@
 from contextlib import contextmanager
 import shlex
 import os
-import sys
 import subprocess
-import yaml
 import datetime
 from cookiecutter.utils import rmtree
-
-from click.testing import CliRunner
-
-if sys.version_info > (3, 0):
-    import importlib
-else:
-    import imp
 
 
 @contextmanager
@@ -88,7 +79,7 @@ def test_bake_with_defaults(cookies):
 def test_bake_and_run_tests(cookies):
     with bake_in_temp_dir(cookies) as result:
         assert result.project.isdir()
-        run_inside_dir('python setup.py test', str(result.project)) == 0
+        run_inside_dir('tox -epy36', str(result.project)) == 0
         print("test_bake_and_run_tests path", str(result.project))
 
 
@@ -96,14 +87,14 @@ def test_bake_withspecialchars_and_run_tests(cookies):
     """Ensure that a `full_name` with double quotes does not break setup.py"""
     with bake_in_temp_dir(cookies, extra_context={'full_name': 'name "quote" name'}) as result:
         assert result.project.isdir()
-        run_inside_dir('python setup.py test', str(result.project)) == 0
+        run_inside_dir('tox -epy36', str(result.project)) == 0
 
 
 def test_bake_with_apostrophe_and_run_tests(cookies):
     """Ensure that a `full_name` with apostrophes does not break setup.py"""
     with bake_in_temp_dir(cookies, extra_context={'full_name': "O'connor"}) as result:
         assert result.project.isdir()
-        run_inside_dir('python setup.py test', str(result.project)) == 0
+        run_inside_dir('tox -epy36', str(result.project)) == 0
 
 
 def test_bake_without_author_file(cookies):
@@ -150,12 +141,3 @@ def test_bake_not_open_source(cookies):
         assert 'setup.py' in found_toplevel_files
         assert 'LICENSE' not in found_toplevel_files
         assert 'License' not in result.project.join('README.rst').read()
-
-
-def test_using_pytest(cookies):
-    with bake_in_temp_dir(cookies, extra_context={}) as result:
-        assert result.project.isdir()
-        # Test the new pytest target
-        run_inside_dir('python setup.py pytest', str(result.project)) == 0
-        # Test the test alias (which invokes pytest)
-        run_inside_dir('python setup.py test', str(result.project)) == 0
