@@ -29,7 +29,7 @@ More info and examples on:
 
 
 Features
---------
+========
 
 This project defines a new pytest-play_ command:
 
