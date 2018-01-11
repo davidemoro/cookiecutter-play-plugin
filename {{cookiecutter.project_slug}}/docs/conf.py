@@ -54,7 +54,7 @@ source_suffix = '.rst'
 master_doc = 'index'
 
 # General information about the project.
-project = u'{{ cookiecutter.project_name }}'
+project = u'{{ cookiecutter.project_slug }}'
 copyright = u"{% now 'local', '%Y' %}, {{ cookiecutter.full_name }}"
 
 # The version info for the project you're documenting, acts as replacement
