@@ -65,14 +65,14 @@ For Every Release
             pip install readme_renderer
             python setup.py check -r -s
 
-#. Edit the release on GitHub (e.g. https://github.com/tierratelematicsr/cookiecutter/releases). Paste the release notes into the release's release page, and come up with a title for the release.
+#. Edit the release on GitHub (e.g. https://github.com/audreyr/cookiecutter/releases). Paste the release notes into the release's release page, and come up with a title for the release.
 
 About This Checklist
 --------------------
 
 This checklist is adapted from:
 
-* https://gist.github.com/tierratelematicsr/5990987
-* https://gist.github.com/tierratelematicsr/9f1564ea049c14f682f4
+* https://gist.github.com/audreyr/5990987
+* https://gist.github.com/audreyr/9f1564ea049c14f682f4
 
 It assumes that you are using all features of Cookiecutter PyPackage.
