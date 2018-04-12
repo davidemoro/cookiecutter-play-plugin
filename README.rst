@@ -2,9 +2,8 @@
 Cookiecutter PyPackage
 ======================
 
-.. image:: https://img.shields.io/travis/davidemoro/cookiecutter-play-plugin.svg
-    :target: https://travis-ci.org/davidemoro/cookiecutter-play-plugin
-    :alt: Linux build status on Travis CI
+.. image:: https://travis-ci.org/davidemoro/cookiecutter-play-plugin.svg?branch=master
+       :target: https://travis-ci.org/davidemoro/cookiecutter-play-plugin
 
 
 Cookiecutter_ template for pytest-play_ plugins.
