@@ -32,6 +32,6 @@ This package is a fork of cookiecutter-pypackage_. It adds what you need to regi
 a new pytest-play_ command provider and removes not needed features provided in the
 original package.
 
-.. _pytest-play: https://github.com/pytest-dev/pytest-play
+.. _pytest-play: https://github.com/davidemoro/pytest-play
 .. _Cookiecutter: https://github.com/audrey/cookiecutter
 .. _cookiecutter-pypackage: https://github.com/audrey/cookiecutter-pypackage
