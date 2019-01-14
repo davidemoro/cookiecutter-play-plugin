@@ -1,4 +1,4 @@
-PyYAML==4.2b1
+PyYAML==4.2b4
 pytest==3.1.2
 tox==2.3.1
 cryptography==2.4.2
