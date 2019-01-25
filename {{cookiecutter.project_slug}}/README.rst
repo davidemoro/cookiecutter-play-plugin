@@ -34,7 +34,8 @@ This project defines a new pytest-play_ command:
 
 ::
 
-    {'type': 'print', 'provider': '{{ cookiecutter.project_slug }}'}
+    - type: print
+      provider: "{{ cookiecutter.project_slug }}"
 
 You can add more commands adding new methods to the command provider implementation in ``providers.py`` module.
 
